@@ -15,7 +15,7 @@ class Student
      FROM students
      SQL
 
-     DB[:conn].execute(sql)
+     DB[:conn].execute(sql).map do |row0|
 
   end
 
