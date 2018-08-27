@@ -98,11 +98,10 @@ class Student
      LIMIT 1
      SQL
 
-     DB[:conn].execute(sql)
+     student10 = DB[:conn].execute(sql)
 
-     new_student.id = row[0]
-     new_student.name = row[1]
-     new_student.grade = row[2]
+     id = student10[0]
+
   end
 
 
