@@ -77,13 +77,12 @@ class Student
      SQL
 
      below_12_students = DB[:conn].execute(sql)
+     puts self.new_from_db(below_12_students)
+    #  below_12_students.each do |student|
+    #    self.new_from_db(student)
 
-     below_12_students.each do |student|
-       self.new_from_db(student)
 
 
-     new_ray = self.new_from_db(below_12_students)
-     array.push(new_ray)
   end
 
   def self.first_X_students_in_grade_10(num)
