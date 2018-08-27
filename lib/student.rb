@@ -100,9 +100,8 @@ class Student
 
      student10 = DB[:conn].execute(sql)
 
-     id = student10[0]
-     name = student10[1]
-     
+     self.new_from_db(student10)
+
   end
 
 
