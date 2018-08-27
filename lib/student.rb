@@ -76,9 +76,9 @@ class Student
      WHERE grade < 12
      SQL
 
-     below_12_students = DB[:conn].execute(sql)
-     array << self.new_from_db(below_12_students)
-     puts array
+     puts below_12_students = DB[:conn].execute(sql)
+    #  array << self.new_from_db(below_12_students)
+    #  puts array
 
   end
 
