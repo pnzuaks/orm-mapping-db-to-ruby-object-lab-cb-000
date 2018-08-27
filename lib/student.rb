@@ -75,7 +75,7 @@ class Student
      FROM students
      WHERE grade < 12
      SQL
-
+    my_array = 
      below_12_students = DB[:conn].execute(sql)
      new_students = self.new_from_db(below_12_students[0])
      new_students
