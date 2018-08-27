@@ -76,7 +76,8 @@ class Student
      WHERE grade < 12
      SQL
 
-     DB[:conn].execute(sql)
+     below_12_students = DB[:conn].execute(sql)
+     self.new_from_db(below_12_students)
   end
 
   def self.first_X_students_in_grade_10(num)
@@ -102,7 +103,7 @@ class Student
 
      new_stud_10 = self.new_from_db(student10)
      new_stud_10.id = 2
-     
+
   end
 
 
