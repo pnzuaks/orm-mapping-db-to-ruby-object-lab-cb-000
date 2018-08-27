@@ -99,7 +99,7 @@ class Student
      SQL
 
      new_stud_10 = self.new_from_db(DB[:conn].execute(sql))
-     return new_stud_10
+     puts new_stud_10
   end
 
 
