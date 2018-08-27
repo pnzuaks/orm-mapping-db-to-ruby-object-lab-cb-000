@@ -101,7 +101,7 @@ class Student
      student10 = DB[:conn].execute(sql)
 
      id = student10[0]
-
+     id
   end
 
 
