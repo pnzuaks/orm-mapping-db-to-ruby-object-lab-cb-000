@@ -70,6 +70,7 @@ class Student
   end
 
   def self.students_below_12th_grade()
+    array = []
     sql = <<-SQL
      SELECT *
      FROM students
@@ -77,8 +78,8 @@ class Student
      SQL
 
      below_12_students = DB[:conn].execute(sql)
-     self.new_from_db(below_12_students)
-
+     array << self.new_from_db(below_12_students)
+     array
 
   end
 
