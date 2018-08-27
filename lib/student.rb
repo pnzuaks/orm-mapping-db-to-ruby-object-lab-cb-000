@@ -102,7 +102,7 @@ class Student
 
      new_stud_10 = self.new_from_db(student10)
      new_stud_10.id = 2
-     ne
+     puts new_stud_10.id
   end
 
 
