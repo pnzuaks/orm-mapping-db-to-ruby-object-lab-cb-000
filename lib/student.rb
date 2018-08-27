@@ -77,7 +77,7 @@ class Student
      SQL
 
      below_12_students = DB[:conn].execute(sql)
-     below_12_students
+     below_12_students[0]
     #  array << self.new_from_db(below_12_students)
     #  puts array
 
