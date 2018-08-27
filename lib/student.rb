@@ -89,4 +89,7 @@ class Student
 
      DB[:conn].execute(sql)
   end
+
+  def first_student_in_grade_10()
+  end
 end
