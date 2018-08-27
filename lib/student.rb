@@ -91,5 +91,14 @@ class Student
   end
 
   def first_student_in_grade_10()
+    sql = <<-SQL
+     SELECT *
+     FROM students
+     WHERE grade = 10
+     LIMIT #{num}
+     SQL
+
+     DB[:conn].execute(sql)
+  end
   end
 end
