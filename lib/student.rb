@@ -77,6 +77,11 @@ class Student
      SQL
 
      below_12_students = DB[:conn].execute(sql)
+
+     below_12_students.each do |student|
+       self.new_from_db(student)
+
+
      new_ray = self.new_from_db(below_12_students)
      array.push(new_ray)
   end
