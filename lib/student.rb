@@ -102,12 +102,9 @@ class Student
      LIMIT 1
      SQL
 
-     student10 = DB[:conn].execute(sql)
-
-    new_stud_10 = self.new_from_db(student10[0])
-    new_stud_10
-    # #  new_stud_10.id = 2
-
+      student10 = DB[:conn].execute(sql)
+      new_stud_10 = self.new_from_db(student10[0])
+      new_stud_10
   end
 
 
