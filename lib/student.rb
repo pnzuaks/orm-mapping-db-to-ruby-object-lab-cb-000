@@ -77,10 +77,7 @@ class Student
      SQL
 
      below_12_students = DB[:conn].execute(sql)
-     puts self.new_from_db(below_12_students)
-    #  below_12_students.each do |student|
-    #    self.new_from_db(student)
-
+     self.new_from_db(below_12_students)
 
 
   end
