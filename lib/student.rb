@@ -100,7 +100,7 @@ class Student
      SQL
 
      new_stud_10 = self.new_from_db(DB[:conn].execute(sql))
-     array << new_stud_10
+     new_stud_10
   end
 
 
